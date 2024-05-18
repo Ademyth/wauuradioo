@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Divider, Grid, IconButton, Link, Typography } from "@material-ui/core";
@@ -12,35 +13,20 @@ function FifthSection() {
         <Grid className={classes.gridItem} xs={12} md={4} item>
           <img
             src="/images/logo_type_only.png"
-            alt="روندا"
+            alt="logo"
             className={classes.logoType}
           />
           <Grid container xs={12} className={classes.linksWrapper}>
             <Grid xs={6} item>
               <Link href="#section-2" className={classes.link}>
-                <Typography>دریافت اپلیکیشن</Typography>
-              </Link>
-            </Grid>
-            <Grid xs={6} item>
-              <Link href="/fa/privacy" className={classes.link}>
-                <Typography>قوانین</Typography>
-              </Link>
-            </Grid>
-            <Grid xs={6} item>
-              <Link href="#" className={classes.link}>
-                <Typography>تماس با پشتیبانی</Typography>
-              </Link>
-            </Grid>
-            <Grid xs={6} item>
-              <Link href="/AboutUs" className={classes.link}>
-                <Typography>درباره ما</Typography>
+                <Typography>Listen and Enjoy</Typography>
               </Link>
             </Grid>
           </Grid>
         </Grid>
         <Grid className={classes.gridItem} xs={12} md={4} item>
           <Typography align="center" variant="h6" className={classes.heading}>
-            شبکه اجتماعی
+            Social Media
           </Typography>
           <div className={classes.socialWrapper}>
             <IconButton className={classes.socialIcon} aria-label="linkedin">
@@ -59,16 +45,16 @@ function FifthSection() {
         </Grid>
         <Grid className={classes.gridItem} xs={12} md={4} item>
           <Typography align="center" variant="h6" className={classes.heading}>
-            مجوز ها
+            WAUU Radio
           </Typography>
           <div className={classes.socialWrapper}>
-          <a target="_blank" href="https://trustseal.enamad.ir/?id=195650&amp;Code=MyWL9h8opAcMoC0tlQMD" referrerpolicy="origin">
+          <a target="_blank" href="https://trustseal.enamad.ir/?id=195650&amp;Code=MyWL9h8opAcMoC0tlQMD" referrerPolicy="origin">
             <img
               src="/images/enamad.png"
-              alt="نماد الکترونیک"
+              alt="ena"
               className={classes.certificateImage}
               id="MyWL9h8opAcMoC0tlQMD"
-              referrerpolicy="origin"
+              referrerPolicy="origin"
             />
             </a>
           </div>
@@ -76,7 +62,7 @@ function FifthSection() {
       </Grid>
       <Divider className={classes.divider} />
       <Typography align="center" className={classes.copyRight}>
-        تمام حقوق مادی و معنوی سایت متعلق به روندا میباشد - 1399
+        WAUU
       </Typography>
     </div>
   );
@@ -85,7 +71,7 @@ function FifthSection() {
 const useStyles = makeStyles((theme: Theme) => ({
   heading: {
     fontWeight: 800,
-    color: "#5d5d5d",
+    color: "#000000",
     fontSize: 25,
   },
   gridContainer: {
@@ -101,7 +87,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
   },
   subhead: {
-    color: "#989898",
+    color: "#000000",
     marginTop: theme.spacing(8),
     fontSize: 25,
   },
@@ -136,14 +122,14 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   link: {
     fontSize: 20,
-    color: "#707070",
+    color: "#000000",
     display: "inline-block",
     transition: theme.transitions.create("color", {
       duration: theme.transitions.duration.standard,
     }),
     "&:hover": {
       textDecoration: "none",
-      color: "#000",
+      color: "#000000",
     },
     [theme.breakpoints.down("sm")]: {
       marginBottom: theme.spacing(2),

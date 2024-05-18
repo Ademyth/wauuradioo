@@ -1,7 +1,5 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Button, Grid, Typography } from "@material-ui/core";
-import { CloudDownload, Language } from "@material-ui/icons";
-import { getPwaUrl } from "../helpers/common";
 
 function DownloadSection() {
   const classes = useStyles();
@@ -9,117 +7,11 @@ function DownloadSection() {
     <div className={classes.section1} id="section-2">
       <Grid container className={classes.gridContainer}>
         <Grid item xs={12} md={8}>
-          <Typography align="right" variant="h3" className={classes.heading}>
-            دریافت اپلیکیشن
+          <Typography align="center" variant="h3" className={classes.heading}>
+            To Download
           </Typography>
-          <Typography align="right" variant="h4" className={classes.subhead}>
-            نسخه iOS
-          </Typography>
-          <Grid
-            container
-            direction="row"
-            justify="flex-start"
-            alignItems="center"
-            spacing={2}
-            className={classes.buttonContainer}
-          >
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-                onClick={() => {
-                  window.location.assign(getPwaUrl());
-                }}
-              >
-                <Language className={classes.appLogo} />
-                <Typography align="center" className={classes.appName}>
-                  وب اپلیکیشن
-                </Typography>
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={`${classes.appButton}`}
-                onClick={() => {
-                  window.location.assign('https://sibche.com/applications/ronda');
-                }}
-              >
-                <img
-                  src="/images/markets/logo_sibche.png"
-                  alt="دانلود از سیب چه"
-                  className={classes.appLogo}
-                />
-                <Typography align="center" className={classes.appName}>
-                  سیبچه
-                </Typography>
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-                onClick={() => {
-                  window.location.assign('https://anardoni.com/ios/app/HP4vc3sGt');
-                }}
-              >
-                <img
-                  src="/images/markets/anardooni_logo.png"
-                  alt="دانلود از اناردونی"
-                  className={classes.appLogo}
-                />
-                <Typography align="center" className={classes.appName}>
-                  اناردونی
-                </Typography>
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-                onClick={() => {
-                  window.location.assign('https://iapps.ir/app/%D8%B1%D9%88%D9%86%D8%AF%D8%A7/657088501');
-                }}
-              >
-                <img
-                  src="/images/markets/logo_i_apps.png"
-                  alt="دانلود از آی اپس"
-                  className={classes.appLogo}
-                />
-                <Typography align="center" className={classes.appName}>
-                  آی اپس
-                </Typography>
-              </Button>
-            </Grid>
-
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-              >
-                <img
-                  src="/images/markets/logo_sib_app.png"
-                  alt="دانلود از سیب اپ"
-                  className={classes.appLogo}
-                />
-                <Typography align="center" className={classes.appName}>
-                  سیب اپ
-                </Typography>
-                <div className={classes.commingSoon}>
-                  <Typography align="center" className={classes.commingSoonText}>
-                    به زودی
-                  </Typography>
-                </div>
-              </Button>
-            </Grid>
-          </Grid>
-          <Typography align="right" variant="h4" className={classes.subhead}>
-            نسخه اندروید
+          <Typography align="center" variant="h4" className={classes.subhead}>
+            Only available for Android
           </Typography>
           <Grid
             container
@@ -129,38 +21,6 @@ function DownloadSection() {
             spacing={2}
             className={classes.buttonContainer}
           >
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-                onClick={() => {
-                  window.location.assign(getPwaUrl());
-                }}
-              >
-                <Language className={classes.appLogo} />
-                <Typography align="center" className={classes.appName}>
-                  وب اپلیکیشن
-                </Typography>
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-                onClick={() => {
-                  window.location.assign(
-                    "https://cdn.qormeh.com/upload/ronda-137.apk"
-                  );
-                }}
-              >
-                <CloudDownload className={classes.appLogo} />
-                <Typography align="center" className={classes.appName}>
-                  دانلود مستقیم
-                </Typography>
-              </Button>
-            </Grid>
             <Grid item>
               <Button
                 variant="outlined"
@@ -172,7 +32,7 @@ function DownloadSection() {
               >
                 <img
                   src="/images/markets/google_play_logo.png"
-                  alt="دانلود از گوگل پلی"
+                  alt="google"
                   className={classes.appLogo}
                 />
                 <Typography align="center" className={classes.appName}>
@@ -181,23 +41,6 @@ function DownloadSection() {
               </Button>
             </Grid>
             <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-              >
-                <img
-                  src="/images/markets/bazaar.png"
-                  alt="دانلود از بازار"
-                  className={classes.appLogo}
-                  onClick={() => {
-                    window.location.assign("https://cafebazaar.ir/app/com.arsalweb.ronda");
-                  }}
-                />
-                <Typography align="center" className={classes.appName}>
-                  بازار
-                </Typography>
-              </Button>
             </Grid>
           </Grid>
         </Grid>
@@ -205,7 +48,7 @@ function DownloadSection() {
       <div className={classes.iphone}>
         <img
           src="/images/logo_typo.png"
-          alt="روندا"
+          alt="logo"
           className={classes.logo_type}
         />
       </div>
@@ -216,14 +59,14 @@ function DownloadSection() {
 const useStyles = makeStyles((theme: Theme) => ({
   heading: {
     fontWeight: 800,
-    color: "#5d5d5d",
+    color: "#000000",
     fontSize: 42,
     [theme.breakpoints.down("sm")]: {
       fontSize: 35,
     },
   },
   subhead: {
-    color: "#989898",
+    color: "#1E1E20",
     marginTop: theme.spacing(4),
     fontSize: 30,
     [theme.breakpoints.down("sm")]: {

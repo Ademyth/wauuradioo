@@ -8,7 +8,7 @@ function ThirdSection() {
   return (
     <div className={classes.section3} id="section-3">
       <Typography align="center" variant="h3" className={classes.heading}>
-        چرا روندا ؟
+        section 3
       </Typography>
       <div className={classes.gridWrapper}>
         <Grid xs={10} container justify="center" spacing={matches ? 1 : 6}> 
@@ -16,10 +16,10 @@ function ThirdSection() {
             <Paper className={classes.paper}>
               <img src="/images/discount.png" alt="همواه تخفیف" className={classes.icon} />
               <Typography align="center" className={classes.title}>
-                همواره تخفیف
+                another one
               </Typography>
               <Typography align="center" className={classes.subtitle}>
-                تخفیفات فراوان برای کالا های مختلف جهت خریدی بصرفه
+                one more
               </Typography>
             </Paper>
           </Grid>
@@ -27,10 +27,10 @@ function ThirdSection() {
             <Paper className={classes.paper}>
               <img src="/images/fast_delivery.png" alt="تحویل سریع" className={classes.icon} />
               <Typography align="center" className={classes.title}>
-                تحویل سریع
+                more
               </Typography>
               <Typography align="center" className={classes.subtitle}>
-                تحویل سفارش در کمتر از یک ساعت و امکان انتخاب زمان ارسال دلخواه
+                more more
               </Typography>
             </Paper>
           </Grid>
@@ -38,10 +38,10 @@ function ThirdSection() {
             <Paper className={classes.paper}>
               <img src="/images/discount.png" alt="تخفیف سفارش اول" className={classes.icon} />
               <Typography align="center" className={classes.title}>
-                تخفیف سفارش اول
+                another one
               </Typography>
               <Typography align="center" className={classes.subtitle}>
-              با کد HIRONDA اولین سفارش شما از روندا شامل ۲۰ هزارتومان تخفیف خواهد شد
+                another more
               </Typography>
             </Paper>
           </Grid>

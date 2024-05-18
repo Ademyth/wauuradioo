@@ -1,7 +1,6 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import FirstSection from "./first-section";
 import DownloadSection from "./download-section";
-import ThirdSection from "./third-section";
 import FourthSection from "./fourth-section";
 import FifthSection from "./fifth-section";
 import Scrollspy from "react-scrollspy";
@@ -18,7 +17,6 @@ import {
   Fade,
   Typography,
 } from "@material-ui/core";
-import Backdrop from "@material-ui/core/Backdrop";
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -30,10 +28,10 @@ function Home() {
 
 
   useEffect(function () {
-    if (query.get("refer") == "ghormeh") {
+    if (query.get("refer") === "ghormeh") {
       setWelcomeModal(true);
     }
-  }, []);
+  },[query]);
   return (
     <div className={classes.wrapper}>
       <div>
@@ -43,15 +41,15 @@ function Home() {
           }}
           open={welcomeModal}
         >
-          <DialogTitle id="simple-dialog-title">به <b>روندا</b> خوش‌ آمدی</DialogTitle>
+          <DialogTitle id="simple-dialog-title">Ade<b>Goke</b>Oba</DialogTitle>
           <Fade in={welcomeModal}>
             <Card variant="outlined">
               <CardContent>
                 <Typography>
-                  دوست قدیمی قورمه ، از این به بعد <b>روندا</b> صدامون کن
+                  This is me<b>meeeeeeeeeee</b>This is goke
                   <br />
-                  ۲۵ هزارتومان هدیه ، ویژه اولین سفارش از هایپرمارکت <b>روندا</b> با کد
-                  HiRONDA
+                      It is I<b>Gokuuu</b>Call me
+                  Gokuuuuuuuuu
                 </Typography>
               </CardContent>
               <CardActions>
@@ -61,7 +59,7 @@ function Home() {
                     setWelcomeModal(false);
                   }}
                 >
-                  بستن
+                  I am that I am
                 </Button>
               </CardActions>
             </Card>
@@ -69,7 +67,6 @@ function Home() {
         </Dialog>
         <FirstSection />
         <DownloadSection />
-        <ThirdSection />
         <FourthSection />
         <FifthSection />
         <Scrollspy
@@ -84,16 +81,6 @@ function Home() {
           </li>
           <li>
             <a href="#section-2">
-              <FiberManualRecordIcon className={classes.indicatorIcon} />
-            </a>
-          </li>
-          <li>
-            <a href="#section-3">
-              <FiberManualRecordIcon className={classes.indicatorIcon} />
-            </a>
-          </li>
-          <li>
-            <a href="#section-4">
               <FiberManualRecordIcon className={classes.indicatorIcon} />
             </a>
           </li>

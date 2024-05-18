@@ -9,14 +9,12 @@ function FourthSection() {
       <div className={classes.gridWrapper}>
         <Grid xs={12} md={8} container spacing={0}>
           <Typography align="right" variant="h3" className={classes.heading}>
-            درباره روندا
+            About Us
           </Typography>
           <Typography align="justify" className={classes.subhead}>
-            روندا اپلیکیشن کاملا بومی اهواز مخصوص سفارش از رستوران، سوپرمارکت و
-            میوه است. در حال حاضر روندا مجهز به انباری بزرگ بیش از ۳۰۰۰ تنوع کالایی
-            است که سفارشات سوپرمارکتی و میوه شما را در اسرع وقت بدستتان خواهد
-            رساند. روندا با بیش از ۲۰۰ رستوران آماده به سفارش در اپلیکیشن خود،
-            بزرگ‌ترین سامانه سفارش غذا را برای اهوازی‌ها به ارمغان آورده است.
+          Welcome to WAUU Radio App, your premier destination for the ultimate listening experience! Crafted with passion and precision using Flutter, WAUU Radio App brings the world of radio stations and podcasts right to your fingertips. 
+          At WAUU, we believe in the power of sound to inspire, inform, and entertain. Our app is designed to provide seamless access to a diverse range of radio stations and podcasts, catering to every taste and interest. 
+          Whether you're a music lover, a news junkie, or a podcast enthusiast, WAUU Radio App has something for everyone.
           </Typography>
         </Grid>
       </div>
@@ -27,7 +25,7 @@ function FourthSection() {
 const useStyles = makeStyles((theme: Theme) => ({
   heading: {
     fontWeight: 800,
-    color: "#5d5d5d",
+    color: "#000000",
     fontSize: 42,
     [theme.breakpoints.down("sm")]: {
       fontSize: 35,
@@ -35,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
   },
   subhead: {
-    color: "#989898",
+    color: "#1E1E20",
     marginTop: theme.spacing(6),
     fontSize: 25,
     [theme.breakpoints.down("sm")]: {
@@ -43,10 +41,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
   },
   section3: {
-    backgroundImage: "url(/images/stay.png),url(/images/section4.svg)",
+    backgroundImage: "url(/images/section4.svg)",
     backgroundSize: "auto 430px,auto 530px",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "left center,center left -240px",
+    backgroundPosition: "left center,center right -240px",
     minHeight: "100vh",
     paddingRight: theme.spacing(8),
     position: "relative",

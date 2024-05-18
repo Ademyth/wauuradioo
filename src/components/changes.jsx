@@ -8,14 +8,14 @@ function Changes() {
       <Grid container className={classes.gridContainer}>
         <Grid item xs={12} md={8}>
           <Typography align="right" variant="h3" className={classes.heading}>
-            لیست تغییرات :
+            change
           </Typography>
           <Typography align="right" variant="h4" className={classes.subhead}>
             <ol>
-                  <li>تغیير نام برند به روندا</li>
-                  <li>افزودن هایپر ماركت روندا</li>
-                  <li>افزایش سرعت نرم افزار</li>
-                  <li>برطرف سازی برخی ايرادات جزئی</li>
+                  <li>change1</li>
+                  <li>change2</li>
+                  <li>change3</li>
+                  <li>change4</li>
             </ol>
           </Typography>
         </Grid>

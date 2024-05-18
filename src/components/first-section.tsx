@@ -1,33 +1,20 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Button, Typography } from "@material-ui/core";
-import { Language, PhoneAndroid } from "@material-ui/icons";
-import { getPwaUrl } from "../helpers/common";
+import { PhoneAndroid } from "@material-ui/icons";
 
 function FirstSection() {
   const classes = useStyles();
   return (
     <div className={classes.section1} id="section-1">
-      <img src="/images/logo.png" alt="روندا" className={classes.logo} />
+      <img src="/images/logo.png" alt="logo" className={classes.logo} />
       <Typography variant="h2" className={classes.heading}>
-        سفارش غذا و <br />
-        هایپرمارکت آنلاین روندا
+        West African Union University<br />
+        Radio Application
       </Typography>
       <Typography variant="h4" className={classes.subhead}>
-      همراهی حرفه‌‌‌ای برای خرید 
+      Enjoy the Beat
       </Typography>
       <div className={classes.buttonWraper}>
-        <Button
-          variant="contained"
-          size="large"
-          color="primary"
-          endIcon={<Language className={classes.buttonIcon} />}
-          className={classes.button}
-          onClick={() => {
-            window.location.assign(getPwaUrl());
-          }}
-        >
-          ورود به وب اپلیکیشن
-        </Button>
         <Button
           variant="contained"
           size="large"
@@ -40,7 +27,7 @@ function FirstSection() {
             );
           }}
         >
-          دریافت اپلیکیشن
+          Download
         </Button>
       </div>
     </div>
@@ -51,14 +38,14 @@ const useStyles = makeStyles((theme: Theme) => ({
   heading: {
     fontWeight: 700,
     fontSize: 42,
-    color: "#5d5d5d",
+    color: "#000000",
     [theme.breakpoints.down('sm')]: {
       fontSize: 32,
       marginTop: theme.spacing(8)
     },
   },
   section1: {
-    backgroundImage: "url(/images/section1.svg)",
+    backgroundImage: "url(/images/section1.jpeg)",
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
     minHeight: "100vh",
@@ -85,7 +72,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     width: 100,
   },
   subhead: {
-    color: "#989898",
+    color: "#1E1E20",
     fontWeight: 400,
     marginTop: theme.spacing(5),
     fontSize: 30,

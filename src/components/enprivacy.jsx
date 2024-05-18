@@ -1,4 +1,4 @@
-import { makeStyles, Theme } from "@material-ui/core/styles";
+ import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Button, Grid, Typography } from "@material-ui/core";
 import "vazir-font/dist/font-face.css";
 import React from "react";
