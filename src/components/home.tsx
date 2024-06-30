@@ -41,15 +41,12 @@ function Home() {
           }}
           open={welcomeModal}
         >
-          <DialogTitle id="simple-dialog-title">Ade<b>Goke</b>Oba</DialogTitle>
+          <DialogTitle id="simple-dialog-title"></DialogTitle>
           <Fade in={welcomeModal}>
             <Card variant="outlined">
               <CardContent>
                 <Typography>
-                  This is me<b>meeeeeeeeeee</b>This is goke
-                  <br />
-                      It is I<b>Gokuuu</b>Call me
-                  Gokuuuuuuuuu
+                  
                 </Typography>
               </CardContent>
               <CardActions>
@@ -59,7 +56,7 @@ function Home() {
                     setWelcomeModal(false);
                   }}
                 >
-                  I am that I am
+                  
                 </Button>
               </CardActions>
             </Card>
