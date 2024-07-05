@@ -7,7 +7,7 @@ function FirstSection() {
   const classes = useStyles();
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const audioRef = React.useRef(new Audio("https://listen.radioking.com/radio/670093/stream/734161"));
+  const audioRef = React.useRef(new Audio("https://listen.radioking.com/radio/670558/stream/734650"));
 
   const togglePlayPause = () => {
     setIsLoading(true);

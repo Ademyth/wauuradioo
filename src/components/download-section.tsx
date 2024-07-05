@@ -27,7 +27,7 @@ function DownloadSection() {
                 color="default"
                 className={classes.appButton}
                 onClick={() => {
-                  window.location.assign("https://play.google.com/store/apps/details?id=com.arsalweb.ronda");
+                  window.location.assign("https://play.google.com/");
                 }}
               >
                 <img
