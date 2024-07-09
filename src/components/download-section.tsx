@@ -27,7 +27,7 @@ function DownloadSection() {
                 color="default"
                 className={classes.appButton}
                 onClick={() => {
-                  window.location.assign("https://play.google.com/");
+                  window.location.assign("https://drive.google.com/file/d/1lIh7q_qIY-bPWioCnhVn9mfAiIObjQ5c/view");
                 }}
               >
                 <img
